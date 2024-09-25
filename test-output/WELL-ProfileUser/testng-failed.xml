@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [WELL-ProfileUser]" guice-stage="DEVELOPMENT">
+  <parameter name="environment" value="Test"/>
+  <parameter name="browserName" value="chrome"/>
+  <test thread-count="5" name="WELL-ProfileUser(failed)">
+    <classes>
+      <class name="com.Well.testcases.Login.TC_01_LoginTest">
+        <methods>
+          <include name="Login"/>
+          <include name="setUp"/>
+          <include name="end"/>
+        </methods>
+      </class> <!-- com.Well.testcases.Login.TC_01_LoginTest -->
+    </classes>
+  </test> <!-- WELL-ProfileUser(failed) -->
+</suite> <!-- Failed suite [WELL-ProfileUser] -->

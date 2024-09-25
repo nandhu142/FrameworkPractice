@@ -1,5 +1,8 @@
 package com.Well.Engine;
 
-public class CommonMethod {
-
+public class CommonMethod extends BaseClass{
+	public static void FindElement()
+	{
+		
+	}
 }

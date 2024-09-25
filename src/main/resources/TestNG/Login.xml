@@ -1,1 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="WELL-ProfileUser">
+<parameter name="browserName" value="chrome"/>
+<parameter name="environment" value="Test"/>
+
+ <test name="WELL-ProfileUser" >
+<classes>
+<class name="com.Well.testcases.Login.TC_01_LoginTest"></class>
+</classes>
+</test>
+</suite>  
