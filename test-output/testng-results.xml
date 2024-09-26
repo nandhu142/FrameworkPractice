@@ -1,85 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="0" skipped="1">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-25T04:49:29Z" name="Default suite" finished-at="2024-09-25T04:49:29Z" duration-ms="42">
+  <suite started-at="2024-09-26T02:58:02Z" name="WELL-ProfileUser" finished-at="2024-09-26T02:59:07Z" duration-ms="64937">
     <groups>
     </groups>
-    <test started-at="2024-09-25T04:49:29Z" name="Default test" finished-at="2024-09-25T04:49:29Z" duration-ms="42">
+    <test started-at="2024-09-26T02:58:02Z" name="WELL-ProfileUser" finished-at="2024-09-26T02:59:07Z" duration-ms="64937">
       <class name="com.Well.testcases.Login.TC_01_LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@14fc1f0]" started-at="2024-09-25T04:49:29Z" name="setUp" finished-at="2024-09-25T04:49:29Z" duration-ms="0" status="FAIL">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeSuite on method setUp but has not been marked @Optional or defined
-in C:\Users\Hi\AppData\Local\Temp\testng-eclipse-486783544\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeSuite on method setUp but has not been marked @Optional or defined
-in C:\Users\Hi\AppData\Local\Temp\testng-eclipse-486783544\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@cad498c]" started-at="2024-09-26T02:57:51Z" name="setUp" finished-at="2024-09-26T02:58:02Z" duration-ms="10958" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Test]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@14fc1f0]" started-at="2024-09-25T04:49:29Z" name="Login" finished-at="2024-09-25T04:49:29Z" duration-ms="0" status="SKIP">
-          <exception class="org.testng.TestNGException">
-            <message>
-              <![CDATA[
-Parameter 'browserName' is required by BeforeSuite on method setUp but has not been marked @Optional or defined
-in C:\Users\Hi\AppData\Local\Temp\testng-eclipse-486783544\testng-customsuite.xml]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.testng.TestNGException: 
-Parameter 'browserName' is required by BeforeSuite on method setUp but has not been marked @Optional or defined
-in C:\Users\Hi\AppData\Local\Temp\testng-eclipse-486783544\testng-customsuite.xml
-at org.testng.internal.Parameters.createParams(Parameters.java:290)
-at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:359)
-at org.testng.internal.Parameters.createParameters(Parameters.java:620)
-at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:190)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:209)
-at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:142)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:401)
-at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-at org.testng.TestNG.runSuites(TestNG.java:1049)
-at org.testng.TestNG.run(TestNG.java:1017)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.testng.TestNGException -->
+        <test-method signature="Login()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@cad498c]" started-at="2024-09-26T02:58:02Z" name="Login" finished-at="2024-09-26T02:59:07Z" duration-ms="64897" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@14fc1f0]" started-at="2024-09-25T04:49:29Z" name="end" finished-at="2024-09-25T04:49:29Z" duration-ms="0" status="SKIP">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@cad498c]" started-at="2024-09-26T02:59:07Z" name="end" finished-at="2024-09-26T02:59:07Z" duration-ms="234" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->
       </class> <!-- com.Well.testcases.Login.TC_01_LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- WELL-ProfileUser -->
+  </suite> <!-- WELL-ProfileUser -->
 </testng-results>

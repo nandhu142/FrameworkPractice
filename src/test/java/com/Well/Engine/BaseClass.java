@@ -24,6 +24,7 @@ public class BaseClass {
 	public static String TestUrl;
 	public static String TestNGTestName;
 	public static String TestCaseName;
+	public static String objectvalue;
 	public String envVar;
 	public static ReusableMethodsLogin login = new ReusableMethodsLogin();
 
@@ -45,27 +46,28 @@ public class BaseClass {
         System.out.println(browserName);
         System.out.println(environment);
         
-		Properties prop = new Properties();
-		if ((System.getenv("browserName") != null && !System.getenv("browserName").isEmpty())
-				&& System.getenv("environment") != null && !System.getenv("environment").isEmpty())
-		{
-			browserName = System.getenv("browserName");
-			environment = System.getenv("environment");
-			Environment = environment;
-			BrowserName = browserName;
-			System.out.println(browserName);
-			System.out.println(environment);
-		}
+//		Properties prop = new Properties();
+//		if ((System.getenv("browserName") != null && !System.getenv("browserName").isEmpty())
+//				&& System.getenv("environment") != null && !System.getenv("environment").isEmpty())
+//		{
+//			browserName = System.getenv("browserName");
+//			environment = System.getenv("environment");
+//			Environment = environment;
+//			BrowserName = browserName;
+//			System.out.println(browserName);
+//			System.out.println(environment);
+//		}
+        Properties prop = new Properties();
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/Environment.properties");
 		prop.load(file); 
 		TestUrl = prop.getProperty("ENV_TEST");
 		driver.get(TestUrl);
-		if (Environment.equalsIgnoreCase("TEST")) {
-			do {
-				envVar = "https://test-v2-api.wellcertified.com/api/";
-				// CommonMethod.waitForPageLoaded(120);
-			} while (driver.getPageSource().contains("Project Error"));
-		}
+//		if (Environment.equalsIgnoreCase("TEST")) {
+//			do {
+//				envVar = "https://test-v2-api.wellcertified.com/api/";
+//				// CommonMethod.waitForPageLoaded(120);
+//			} while (driver.getPageSource().contains("Project Error"));
+//		}
 	}
 	
 		
