@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-26T02:58:02Z" name="WELL-ProfileUser" finished-at="2024-09-26T02:59:07Z" duration-ms="64937">
+  <suite started-at="2024-09-26T13:47:46Z" name="WELL-ProfileUser" finished-at="2024-09-26T13:48:01Z" duration-ms="15606">
     <groups>
     </groups>
-    <test started-at="2024-09-26T02:58:02Z" name="WELL-ProfileUser" finished-at="2024-09-26T02:59:07Z" duration-ms="64937">
+    <test started-at="2024-09-26T13:47:46Z" name="WELL-ProfileUser" finished-at="2024-09-26T13:48:01Z" duration-ms="15606">
       <class name="com.Well.testcases.Login.TC_01_LoginTest">
-        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@cad498c]" started-at="2024-09-26T02:57:51Z" name="setUp" finished-at="2024-09-26T02:58:02Z" duration-ms="10958" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String, java.lang.String)[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@f0da945]" started-at="2024-09-26T13:47:29Z" name="setUp" finished-at="2024-09-26T13:47:46Z" duration-ms="16359" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="Login()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@cad498c]" started-at="2024-09-26T02:58:02Z" name="Login" finished-at="2024-09-26T02:59:07Z" duration-ms="64897" status="PASS">
+        <test-method signature="Login()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@f0da945]" started-at="2024-09-26T13:47:46Z" name="Login" finished-at="2024-09-26T13:48:01Z" duration-ms="15424" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method is-config="true" signature="end()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@cad498c]" started-at="2024-09-26T02:59:07Z" name="end" finished-at="2024-09-26T02:59:07Z" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="end()[pri:0, instance:com.Well.testcases.Login.TC_01_LoginTest@f0da945]" started-at="2024-09-26T13:48:01Z" name="end" finished-at="2024-09-26T13:48:02Z" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- end -->

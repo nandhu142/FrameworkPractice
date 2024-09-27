@@ -8,7 +8,7 @@ import com.Well.Engine.BaseClass;
 
 public class TC_01_LoginTest extends BaseClass {
 	@Test
-	public void Login() throws IOException
+	public void Login() throws IOException, InterruptedException
 	{
 		TestCaseName = Thread.currentThread().getStackTrace()[1].getMethodName();
 		StartTest(TestCaseName,"WELL Login Functionality");

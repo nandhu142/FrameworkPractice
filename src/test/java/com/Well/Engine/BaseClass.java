@@ -25,6 +25,9 @@ public class BaseClass {
 	public static String TestNGTestName;
 	public static String TestCaseName;
 	public static String objectvalue;
+	public static XlsReader data;
+	public static XlsReader pl;
+	public static XlsReader portfolioLocationDownload;
 	public String envVar;
 	public static ReusableMethodsLogin login = new ReusableMethodsLogin();
 
@@ -57,7 +60,10 @@ public class BaseClass {
 //			System.out.println(browserName);
 //			System.out.println(environment);
 //		}
+
+		data = new XlsReader(System.getProperty("user.dir") + "/TestData.xlsx");
         Properties prop = new Properties();
+        
 		FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "/src/main/resources/Environment.properties");
 		prop.load(file); 
 		TestUrl = prop.getProperty("ENV_TEST");

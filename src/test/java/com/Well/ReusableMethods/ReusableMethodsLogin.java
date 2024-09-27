@@ -11,18 +11,24 @@ public class ReusableMethodsLogin extends BaseClass {
 	public void Login() throws IOException, InterruptedException
 	{
 		System.out.println("In reusable method");
-		Properties OR = new Properties();
-		FileInputStream fp = new FileInputStream(
-				System.getProperty("user.dir") + "/src/main/resources/ObjectLocator.properties");
-		OR.load(fp);
-		String Email="nandhakumaaran.s@sys-core.com";
-		String Password="Init@2024";
-		CommonMethod.sendKeys("EmailTextBox", Email);
+		String Username=null;
+		String Password=null;
+		Username = data.getCellData("Login", "AdminUserName", 3);
+		Password = data.getCellData("Login", "Password", 3);
+		System.out.println(Username);
+		System.out.println(Password);
+		CommonMethod.sendKeys("EmailTextBox", Username);
 		CommonMethod.sendKeys("PasswordBox", Password);
-		Thread.sleep(4000);
+		CommonMethod.getCurrentUrl();
+		CommonMethod.isEnabled("SigninBtn");
 		CommonMethod.RobustClick("SigninBtn");
-		Thread.sleep(60000);		
-		
+		Thread.sleep(10000);		
+		CommonMethod.isDisplayed("DashboardVisible",20);
+//		CommonMethod.getCurrentUrl();
+		System.out.println("Url after login :"+ CommonMethod.getCurrentUrl());
+		Thread.sleep(4000);
 	}
+	
+	
 	
 }

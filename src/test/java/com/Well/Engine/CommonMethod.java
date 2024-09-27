@@ -2,6 +2,7 @@ package com.Well.Engine;
 
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.time.Duration;
 import java.util.Properties;
 
 import org.openqa.selenium.By;
@@ -9,13 +10,12 @@ import org.openqa.selenium.WebElement;
 
 public class CommonMethod extends BaseClass{
 	public static WebElement findElement(final String objectLocater) throws IOException {
-		//// JSWaiter.waitAllRequest();
-		Properties OR = new Properties();
+		Properties p = new Properties();
 		FileInputStream fp = new FileInputStream(
 				System.getProperty("user.dir") + "/src/main/resources/ObjectLocator.properties");
-		OR.load(fp);
+		p.load(fp);
 
-		String objecttypeandvalues = OR.getProperty(objectLocater);
+		String objecttypeandvalues = p.getProperty(objectLocater);
 		String[] splits = objecttypeandvalues.split("~");
 		String objecttype = splits[0];
 		objectvalue = splits[1];
@@ -59,9 +59,44 @@ public class CommonMethod extends BaseClass{
 		findElement(objectLocater).sendKeys(value);
 	}
 	
+	public static String getCurrentUrl() {
+		System.out.println(driver.getCurrentUrl());
+		String getCurrentUrl = driver.getCurrentUrl();
+		return getCurrentUrl;
+	}
+
+	
 	public static void RobustClick(String objectLocator) throws IOException
 	{
-		CommonMethod.findElement(objectLocator).click();
-		
+		CommonMethod.findElement(objectLocator).click();	
+	}
+	
+	public static void isEnabled(String objectLocator) throws IOException
+	{
+		Boolean b=findElement(objectLocator).isEnabled();
+		if(b==true)
+		{
+			System.out.println("signin button is clickable");
+		}
+		else
+		{
+			System.out.println("signin button is not clickable");
+		}
+	}
+	
+	
+	public static void isDisplayed(String objectLocator, int Timeout) throws IOException
+	{
+		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(Timeout));
+		Boolean b=findElement(objectLocator).isDisplayed();
+		System.out.println(b);
+		if(b==true)
+		{
+			System.out.println("Login success!!!");
+		}
+		else
+		{
+			System.out.println("Login Failed...");
+		}
 	}
 }
